@@ -3,7 +3,7 @@ import { addMatchingCardsToResults } from "./lib/add-matching-cards-to-results";
 import { isValidInputType } from "./lib/is-valid-input-type";
 import { findBestMatch } from "./lib/find-best-match";
 import { clone } from "./lib/clone";
-import type {
+import {
   CreditCardType,
   CardCollection,
   CreditCardTypeCardBrandId,
@@ -148,4 +148,4 @@ creditCardType.resetModifications = (): void => {
 
 creditCardType.types = cardNames;
 
-export = creditCardType;
+export default creditCardType;
